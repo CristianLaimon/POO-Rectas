@@ -50,8 +50,12 @@ partial class Form1
             this.btnPendienteRecta = new System.Windows.Forms.Button();
             this.btnDistanciaPuntos = new System.Windows.Forms.Button();
             this.lblDistanciaPuntos = new System.Windows.Forms.Label();
+            this.grpboxCreditos = new System.Windows.Forms.GroupBox();
+            this.lblDiana = new System.Windows.Forms.Label();
+            this.lblKristan = new System.Windows.Forms.Label();
             this.grpboxRecta.SuspendLayout();
             this.grpboxOperaciones.SuspendLayout();
+            this.grpboxCreditos.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblPunto1
@@ -129,7 +133,7 @@ partial class Form1
             this.txtY2.Name = "txtY2";
             this.txtY2.Size = new System.Drawing.Size(125, 27);
             this.txtY2.TabIndex = 9;
-            this.txtY2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtY2.Text = "0";
             this.txtY2.TextChanged += new System.EventHandler(this.txtY2_TextChanged);
             // 
             // txtX2
@@ -138,7 +142,7 @@ partial class Form1
             this.txtX2.Name = "txtX2";
             this.txtX2.Size = new System.Drawing.Size(125, 27);
             this.txtX2.TabIndex = 8;
-            this.txtX2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtX2.Text = "0";
             this.txtX2.TextChanged += new System.EventHandler(this.txtX2_TextChanged);
             // 
             // lblPunto2
@@ -175,7 +179,7 @@ partial class Form1
             this.txtY1.Name = "txtY1";
             this.txtY1.Size = new System.Drawing.Size(125, 27);
             this.txtY1.TabIndex = 4;
-            this.txtY1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtY1.Text = "0";
             this.txtY1.TextChanged += new System.EventHandler(this.txtY1_TextChanged);
             // 
             // txtX1
@@ -184,7 +188,7 @@ partial class Form1
             this.txtX1.Name = "txtX1";
             this.txtX1.Size = new System.Drawing.Size(125, 27);
             this.txtX1.TabIndex = 3;
-            this.txtX1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtX1.Text = "0";
             this.txtX1.TextChanged += new System.EventHandler(this.txtX1_TextChanged);
             // 
             // grpboxOperaciones
@@ -208,7 +212,7 @@ partial class Form1
             // lblResultado
             // 
             this.lblResultado.AutoSize = true;
-            this.lblResultado.Location = new System.Drawing.Point(138, 264);
+            this.lblResultado.Location = new System.Drawing.Point(100, 278);
             this.lblResultado.Name = "lblResultado";
             this.lblResultado.Size = new System.Drawing.Size(93, 20);
             this.lblResultado.TabIndex = 6;
@@ -249,6 +253,7 @@ partial class Form1
             this.btnPuntoMedioRecta.TabIndex = 3;
             this.btnPuntoMedioRecta.Text = "Calcular";
             this.btnPuntoMedioRecta.UseVisualStyleBackColor = true;
+            this.btnPuntoMedioRecta.Click += new System.EventHandler(this.btnPuntoMedioRecta_Click);
             // 
             // btnPendienteRecta
             // 
@@ -279,20 +284,52 @@ partial class Form1
             this.lblDistanciaPuntos.TabIndex = 0;
             this.lblDistanciaPuntos.Text = "Distancia entre dos puntos";
             // 
+            // grpboxCreditos
+            // 
+            this.grpboxCreditos.Controls.Add(this.lblDiana);
+            this.grpboxCreditos.Controls.Add(this.lblKristan);
+            this.grpboxCreditos.Location = new System.Drawing.Point(12, 305);
+            this.grpboxCreditos.Name = "grpboxCreditos";
+            this.grpboxCreditos.Size = new System.Drawing.Size(370, 100);
+            this.grpboxCreditos.TabIndex = 4;
+            this.grpboxCreditos.TabStop = false;
+            this.grpboxCreditos.Text = "Créditos";
+            // 
+            // lblDiana
+            // 
+            this.lblDiana.AutoSize = true;
+            this.lblDiana.Location = new System.Drawing.Point(32, 58);
+            this.lblDiana.Name = "lblDiana";
+            this.lblDiana.Size = new System.Drawing.Size(206, 20);
+            this.lblDiana.TabIndex = 1;
+            this.lblDiana.Text = "Diana Yulissa Sesma Santiago";
+            // 
+            // lblKristan
+            // 
+            this.lblKristan.AutoSize = true;
+            this.lblKristan.Location = new System.Drawing.Point(32, 38);
+            this.lblKristan.Name = "lblKristan";
+            this.lblKristan.Size = new System.Drawing.Size(131, 20);
+            this.lblKristan.TabIndex = 0;
+            this.lblKristan.Text = "Kristan Ruíz Limón";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.grpboxCreditos);
             this.Controls.Add(this.grpboxOperaciones);
             this.Controls.Add(this.grpboxRecta);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "s";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.grpboxRecta.ResumeLayout(false);
             this.grpboxRecta.PerformLayout();
             this.grpboxOperaciones.ResumeLayout(false);
             this.grpboxOperaciones.PerformLayout();
+            this.grpboxCreditos.ResumeLayout(false);
+            this.grpboxCreditos.PerformLayout();
             this.ResumeLayout(false);
 
     }
@@ -321,4 +358,7 @@ partial class Form1
     private Button btnPuntoMedioRecta;
     private Button btnPendienteRecta;
     private Button btnDistanciaPuntos;
+    private GroupBox grpboxCreditos;
+    private Label lblDiana;
+    private Label lblKristan;
 }

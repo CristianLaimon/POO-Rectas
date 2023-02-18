@@ -40,5 +40,16 @@ namespace forms
             return $"{numerador}/{denominador}";
         }
 
+        static public string CalcularPuntoMedio(Punto a, Punto b)
+        {
+            float xMedio, yMedio;
+
+            xMedio = (a.X + b.X) / 2;
+            yMedio = (a.Y+ b.Y) / 2;
+
+            return "(" + xMedio.ToString() + ", " + yMedio.ToString() + ")";
+
+        }
+
     }
 }
