@@ -31,16 +31,16 @@ partial class Form1
             this.lblPunto1 = new System.Windows.Forms.Label();
             this.btnCrearRecta = new System.Windows.Forms.Button();
             this.grpboxRecta = new System.Windows.Forms.GroupBox();
+            this.numY2 = new System.Windows.Forms.NumericUpDown();
+            this.numX2 = new System.Windows.Forms.NumericUpDown();
+            this.numY1 = new System.Windows.Forms.NumericUpDown();
+            this.numX1 = new System.Windows.Forms.NumericUpDown();
             this.lblLineaCreadaAviso = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.txtY2 = new System.Windows.Forms.TextBox();
-            this.txtX2 = new System.Windows.Forms.TextBox();
             this.lblPunto2 = new System.Windows.Forms.Label();
             this.lblY1 = new System.Windows.Forms.Label();
             this.lblX1 = new System.Windows.Forms.Label();
-            this.txtY1 = new System.Windows.Forms.TextBox();
-            this.txtX1 = new System.Windows.Forms.TextBox();
             this.grpboxOperaciones = new System.Windows.Forms.GroupBox();
             this.lblResultado = new System.Windows.Forms.Label();
             this.lblTituloResultados = new System.Windows.Forms.Label();
@@ -54,6 +54,10 @@ partial class Form1
             this.lblDiana = new System.Windows.Forms.Label();
             this.lblKristan = new System.Windows.Forms.Label();
             this.grpboxRecta.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numY2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numX2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numY1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numX1)).BeginInit();
             this.grpboxOperaciones.SuspendLayout();
             this.grpboxCreditos.SuspendLayout();
             this.SuspendLayout();
@@ -80,16 +84,16 @@ partial class Form1
             // 
             // grpboxRecta
             // 
+            this.grpboxRecta.Controls.Add(this.numY2);
+            this.grpboxRecta.Controls.Add(this.numX2);
+            this.grpboxRecta.Controls.Add(this.numY1);
+            this.grpboxRecta.Controls.Add(this.numX1);
             this.grpboxRecta.Controls.Add(this.lblLineaCreadaAviso);
             this.grpboxRecta.Controls.Add(this.label1);
             this.grpboxRecta.Controls.Add(this.label2);
-            this.grpboxRecta.Controls.Add(this.txtY2);
-            this.grpboxRecta.Controls.Add(this.txtX2);
             this.grpboxRecta.Controls.Add(this.lblPunto2);
             this.grpboxRecta.Controls.Add(this.lblY1);
             this.grpboxRecta.Controls.Add(this.lblX1);
-            this.grpboxRecta.Controls.Add(this.txtY1);
-            this.grpboxRecta.Controls.Add(this.txtX1);
             this.grpboxRecta.Controls.Add(this.btnCrearRecta);
             this.grpboxRecta.Controls.Add(this.lblPunto1);
             this.grpboxRecta.Location = new System.Drawing.Point(12, 12);
@@ -99,6 +103,78 @@ partial class Form1
             this.grpboxRecta.TabStop = false;
             this.grpboxRecta.Text = "Recta";
             this.grpboxRecta.Enter += new System.EventHandler(this.groupBox1_Enter);
+            // 
+            // numY2
+            // 
+            this.numY2.Location = new System.Drawing.Point(214, 165);
+            this.numY2.Maximum = new decimal(new int[] {
+            100000,
+            0,
+            0,
+            0});
+            this.numY2.Minimum = new decimal(new int[] {
+            100000,
+            0,
+            0,
+            -2147483648});
+            this.numY2.Name = "numY2";
+            this.numY2.Size = new System.Drawing.Size(150, 27);
+            this.numY2.TabIndex = 16;
+            this.numY2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // numX2
+            // 
+            this.numX2.Location = new System.Drawing.Point(37, 165);
+            this.numX2.Maximum = new decimal(new int[] {
+            100000,
+            0,
+            0,
+            0});
+            this.numX2.Minimum = new decimal(new int[] {
+            100000,
+            0,
+            0,
+            -2147483648});
+            this.numX2.Name = "numX2";
+            this.numX2.Size = new System.Drawing.Size(150, 27);
+            this.numX2.TabIndex = 15;
+            this.numX2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // numY1
+            // 
+            this.numY1.Location = new System.Drawing.Point(214, 94);
+            this.numY1.Maximum = new decimal(new int[] {
+            100000,
+            0,
+            0,
+            0});
+            this.numY1.Minimum = new decimal(new int[] {
+            100000,
+            0,
+            0,
+            -2147483648});
+            this.numY1.Name = "numY1";
+            this.numY1.Size = new System.Drawing.Size(150, 27);
+            this.numY1.TabIndex = 14;
+            this.numY1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // numX1
+            // 
+            this.numX1.Location = new System.Drawing.Point(37, 94);
+            this.numX1.Maximum = new decimal(new int[] {
+            100000,
+            0,
+            0,
+            0});
+            this.numX1.Minimum = new decimal(new int[] {
+            100000,
+            0,
+            0,
+            -2147483648});
+            this.numX1.Name = "numX1";
+            this.numX1.Size = new System.Drawing.Size(150, 27);
+            this.numX1.TabIndex = 13;
+            this.numX1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // lblLineaCreadaAviso
             // 
@@ -127,24 +203,6 @@ partial class Form1
             this.label2.TabIndex = 10;
             this.label2.Text = "X:";
             // 
-            // txtY2
-            // 
-            this.txtY2.Location = new System.Drawing.Point(219, 165);
-            this.txtY2.Name = "txtY2";
-            this.txtY2.Size = new System.Drawing.Size(125, 27);
-            this.txtY2.TabIndex = 9;
-            this.txtY2.Text = "0";
-            this.txtY2.TextChanged += new System.EventHandler(this.txtY2_TextChanged);
-            // 
-            // txtX2
-            // 
-            this.txtX2.Location = new System.Drawing.Point(42, 165);
-            this.txtX2.Name = "txtX2";
-            this.txtX2.Size = new System.Drawing.Size(125, 27);
-            this.txtX2.TabIndex = 8;
-            this.txtX2.Text = "0";
-            this.txtX2.TextChanged += new System.EventHandler(this.txtX2_TextChanged);
-            // 
             // lblPunto2
             // 
             this.lblPunto2.AutoSize = true;
@@ -172,24 +230,6 @@ partial class Form1
             this.lblX1.Size = new System.Drawing.Size(21, 20);
             this.lblX1.TabIndex = 5;
             this.lblX1.Text = "X:";
-            // 
-            // txtY1
-            // 
-            this.txtY1.Location = new System.Drawing.Point(219, 93);
-            this.txtY1.Name = "txtY1";
-            this.txtY1.Size = new System.Drawing.Size(125, 27);
-            this.txtY1.TabIndex = 4;
-            this.txtY1.Text = "0";
-            this.txtY1.TextChanged += new System.EventHandler(this.txtY1_TextChanged);
-            // 
-            // txtX1
-            // 
-            this.txtX1.Location = new System.Drawing.Point(42, 93);
-            this.txtX1.Name = "txtX1";
-            this.txtX1.Size = new System.Drawing.Size(125, 27);
-            this.txtX1.TabIndex = 3;
-            this.txtX1.Text = "0";
-            this.txtX1.TextChanged += new System.EventHandler(this.txtX1_TextChanged);
             // 
             // grpboxOperaciones
             // 
@@ -322,10 +362,14 @@ partial class Form1
             this.Controls.Add(this.grpboxOperaciones);
             this.Controls.Add(this.grpboxRecta);
             this.Name = "Form1";
-            this.Text = "s";
+            this.Text = "Calculadora de rectas";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.grpboxRecta.ResumeLayout(false);
             this.grpboxRecta.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numY2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numX2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numY1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numX1)).EndInit();
             this.grpboxOperaciones.ResumeLayout(false);
             this.grpboxOperaciones.PerformLayout();
             this.grpboxCreditos.ResumeLayout(false);
@@ -341,13 +385,9 @@ partial class Form1
     private GroupBox grpboxRecta;
     private Label label1;
     private Label label2;
-    private TextBox txtY2;
-    private TextBox txtX2;
     private Label lblPunto2;
     private Label lblY1;
     private Label lblX1;
-    private TextBox txtY1;
-    private TextBox txtX1;
     private Label lblLineaCreadaAviso;
     private GroupBox grpboxOperaciones;
     private Label lblDistanciaPuntos;
@@ -361,4 +401,8 @@ partial class Form1
     private GroupBox grpboxCreditos;
     private Label lblDiana;
     private Label lblKristan;
+    private NumericUpDown numY2;
+    private NumericUpDown numX2;
+    private NumericUpDown numY1;
+    private NumericUpDown numX1;
 }
