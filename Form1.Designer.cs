@@ -53,6 +53,8 @@ partial class Form1
             this.grpboxCreditos = new System.Windows.Forms.GroupBox();
             this.lblDiana = new System.Windows.Forms.Label();
             this.lblKristan = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
             this.grpboxRecta.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numY2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numX2)).BeginInit();
@@ -243,7 +245,7 @@ partial class Form1
             this.grpboxOperaciones.Controls.Add(this.lblDistanciaPuntos);
             this.grpboxOperaciones.Location = new System.Drawing.Point(421, 12);
             this.grpboxOperaciones.Name = "grpboxOperaciones";
-            this.grpboxOperaciones.Size = new System.Drawing.Size(330, 393);
+            this.grpboxOperaciones.Size = new System.Drawing.Size(330, 317);
             this.grpboxOperaciones.TabIndex = 3;
             this.grpboxOperaciones.TabStop = false;
             this.grpboxOperaciones.Text = "Operaciones";
@@ -353,11 +355,32 @@ partial class Form1
             this.lblKristan.TabIndex = 0;
             this.lblKristan.Text = "Kristan Ruíz Limón";
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(488, 377);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(222, 38);
+            this.button1.TabIndex = 5;
+            this.button1.Text = "Calculadora Estudiantil";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(463, 343);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(45, 20);
+            this.label3.TabIndex = 6;
+            this.label3.Text = "Más...";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.grpboxCreditos);
             this.Controls.Add(this.grpboxOperaciones);
             this.Controls.Add(this.grpboxRecta);
@@ -375,6 +398,7 @@ partial class Form1
             this.grpboxCreditos.ResumeLayout(false);
             this.grpboxCreditos.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
     }
 
@@ -405,4 +429,6 @@ partial class Form1
     private NumericUpDown numX2;
     private NumericUpDown numY1;
     private NumericUpDown numX1;
+    private Button button1;
+    private Label label3;
 }

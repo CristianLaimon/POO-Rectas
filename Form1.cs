@@ -100,4 +100,11 @@ public partial class Form1 : Form
         }
     
     }
+
+    private void button1_Click(object sender, EventArgs e)
+    {
+        Form2 ventanaEstudiante = Form2.INSTANCIA;
+        ventanaEstudiante.Show();
+        ventanaEstudiante.BringToFront();
+    }
 }
