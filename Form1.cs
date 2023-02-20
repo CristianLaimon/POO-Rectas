@@ -26,41 +26,10 @@ public partial class Form1 : Form
         lblLineaCreadaAviso.Text = $"Punto A: ({punto1.X}, {punto1.Y}) Punto B: ({punto2.X}, {punto2.Y})";
     }
 
-
-    private void label3_Click(object sender, EventArgs e)
-    {
-
-    }
-    private void label1_Click(object sender, EventArgs e)
-    {
-
-    }
-
-    private void txtX2_TextChanged(object sender, EventArgs e)
-    {
-
-
-    }
-
-    private void txtY2_TextChanged(object sender, EventArgs e)
-    {
-
-    }
-
     private void Form1_Load(object sender, EventArgs e)
     {
         lblLineaCreadaAviso.Text = "";
         lblResultado.Text = "";
-    }
-
-    private void groupBox2_Enter(object sender, EventArgs e)
-    {
-
-    }
-
-    private void groupBox1_Enter(object sender, EventArgs e)
-    {
-
     }
 
     private void btnDistanciaPuntos_Click(object sender, EventArgs e)

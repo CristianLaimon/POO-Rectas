@@ -70,7 +70,6 @@ partial class Form1
             this.lblPunto1.Size = new System.Drawing.Size(58, 20);
             this.lblPunto1.TabIndex = 0;
             this.lblPunto1.Text = "Punto1:";
-            this.lblPunto1.Click += new System.EventHandler(this.label1_Click);
             // 
             // btnCrearRecta
             // 
@@ -102,7 +101,6 @@ partial class Form1
             this.grpboxRecta.TabIndex = 2;
             this.grpboxRecta.TabStop = false;
             this.grpboxRecta.Text = "Recta";
-            this.grpboxRecta.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // numY2
             // 
@@ -211,7 +209,6 @@ partial class Form1
             this.lblPunto2.Size = new System.Drawing.Size(62, 20);
             this.lblPunto2.TabIndex = 7;
             this.lblPunto2.Text = "Punto 2:";
-            this.lblPunto2.Click += new System.EventHandler(this.label3_Click);
             // 
             // lblY1
             // 
@@ -247,7 +244,6 @@ partial class Form1
             this.grpboxOperaciones.TabIndex = 3;
             this.grpboxOperaciones.TabStop = false;
             this.grpboxOperaciones.Text = "Operaciones";
-            this.grpboxOperaciones.Enter += new System.EventHandler(this.groupBox2_Enter);
             // 
             // lblResultado
             // 
