@@ -16,11 +16,6 @@ namespace forms
             a = new Punto();
             b = new Punto();
         }
-        public Recta(Punto a, Punto b)
-        {
-            this.a = a;
-            this.b = b;
-        }
 
         public Punto A { get { return a; } set { a = value; } }
         public Punto B { get { return b; } set { b = value; } }
