@@ -37,13 +37,7 @@ namespace forms
 
         static public string CalcularPuntoMedio(Punto a, Punto b)
         {
-            float xMedio, yMedio;
-
-            xMedio = (a.X + b.X) / 2;
-            yMedio = (a.Y+ b.Y) / 2;
-
-            return "(" + xMedio.ToString() + ", " + yMedio.ToString() + ")";
-
+            return "(" + (a.X + b.X) / 2 + ", " + (a.Y + b.Y) / 2 + ")";
         }
 
     }
