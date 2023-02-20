@@ -2,6 +2,12 @@ namespace forms;
 
 public partial class Form1 : Form
 {
+
+    //TODO: Agregar tab index
+    //TODO: Mejorar diseño y colores
+    //TODO: Agregar una ventana con créditos
+    //TODO: 
+
     Punto punto1 = new Punto();
     Punto punto2 = new Punto();
     Recta rectaUsuario = new Recta();
@@ -65,7 +71,6 @@ public partial class Form1 : Form
         else
         {
             lblResultado.Text = Recta.CalcularPuntoMedio(punto1, punto2);
-
         }
     
     }

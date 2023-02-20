@@ -27,12 +27,7 @@ namespace forms
 
         static public string CalcularPendiente(Punto a, Punto b)
         {
-            float numerador, denominador;
-
-            numerador = b.Y - a.Y;
-            denominador = b.X - a.X;
-
-            return $"{numerador}/{denominador}";
+            return $"{b.X - a.X}/{b.Y - a.Y}";
         }
 
         static public string CalcularPuntoMedio(Punto a, Punto b)
